@@ -1,15 +1,123 @@
-<div class="row">
-          <div class="col-lg-5">
-            <img src="img/portfolio/1.jpg" alt="foto">
-          </div>
-          <!-- /.col-lg-3 -->
+<h2 class="modal__name__position">
+  Koshelik
+</h2>
 
-          <div class="col-lg-7">
-            <h4>Sait per trattoria</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, fuga.</p>
-            <a href="#" class="modal_btn">Заказать сайт</a>         
-          </div>
-          <!-- /.col-lg-7 -->
+<div class="wrapper__magnofic__popap">
 
-        </div>
-        <!-- /.row -->
+
+  <a href="img/slider1/slaid-1.jpg" class="link_popap">
+    <img src="img/slider1/slaid-1.jpg" alt="">
+  </a>
+  <a href="img/slider1/slaid-1.jpg" class="link_popap">
+    <img src="img/slider1/slaid-1.jpg" alt="">
+  </a>
+  <a href="img/slider1/slaid-1.jpg" class="link_popap">
+    <img src="img/slider1/slaid-1.jpg" alt="">
+  </a>
+  <a href="img/slider1/slaid-1.jpg" class="link_popap">
+    <img src="img/slider1/slaid-1.jpg" alt="">
+  </a>
+  <a href="img/slider1/slaid-1.jpg" class="link_popap">
+    <img src="img/slider1/slaid-1.jpg" alt="">
+  </a>
+  <a href="img/slider1/slaid-1.jpg" class="link_popap">
+    <img src="img/slider1/slaid-1.jpg" alt="">
+  </a>
+  <a href="img/slider1/slaid-1.jpg" class="link_popap">
+    <img src="img/slider1/slaid-1.jpg" alt="">
+  </a>
+  <a href="img/slider1/slaid-1.jpg" class="link_popap">
+    <img src="img/slider1/slaid-1.jpg" alt="">
+  </a>
+  <a href="img/slider1/slaid-1.jpg" class="link_popap">
+    <img src="img/slider1/slaid-1.jpg" alt="">
+  </a>
+  <a href="img/slider1/slaid-1.jpg" class="link_popap">
+    <img src="img/slider1/slaid-1.jpg" alt="">
+  </a>
+  <a href="img/slider1/slaid-1.jpg" class="link_popap">
+    <img src="img/slider1/slaid-1.jpg" alt="">
+  </a>
+  
+</div>
+
+<div class="modal__name__position__desc">
+  <strong>Далеко-далеко</strong> за словесными горами в стране гласных,
+   и согласных живут рыбные тексты. Жаренные свой толку 
+   раз? Коварных маленький правилами проектах дорогу? 
+   Скатился щеке, знаках по всей наш запятых, его предупреждал 
+   взгляд моей, текстами необходимыми над пустился вопроса! Свою 
+   рыбного путь грамматики назад о пунктуация вопрос, свое речью 
+   решила однажды пояс на берегу буквоград коварных заголовок власти 
+   текстов ты снова языком правилами! Ему, журчит предупредила осталось текста власти великий сих снова рыбными даже на берегу жизни курсивных, дороге заманивший она решила образ продолжил, пор вскоре? Правилами пор возвращайся, образ выйти там грамматики подпоясал, снова языком щеке запятых жаренные текстов переулка речью, города вопроса оксмокс своего решила.
+</div>
+
+
+<style>
+
+
+
+
+
+
+  /* overlay at start */
+  .mfp-wrap {
+    z-index: 100000
+  }
+  .mfp-fade.mfp-bg {
+ 
+  opacity: 0;
+
+
+
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  }
+  /* overlay animate in */
+  .mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+
+  }
+  /* overlay animate out */
+  .mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+
+  }
+
+  /* content at start */
+  .mfp-fade.mfp-wrap .mfp-content {
+ 
+  opacity: 0;
+  transform: rotate(360deg) scale(0);
+
+
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  }
+  /* content animate it */
+  .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+
+  opacity: 1;
+  transform: rotate(0) scale(1);
+  }
+  /* content animate out */
+  .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+
+  opacity: 0;
+  transform: rotate(90deg) scale(0);
+  }
+
+</style>
+
+<script>
+  $('.link_popap').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true
+    },
+    removalDelay: 300,
+    mainClass: 'mfp-fade'
+  });
+</script>

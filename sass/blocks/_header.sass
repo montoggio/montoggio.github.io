@@ -9,6 +9,7 @@ header
   position: fixed
   width: 100%
   z-index: 100
+  border-bottom: 1px solid $colot-light  
   // align-items: center
 .nav__wrapper
   // width: 100%
@@ -26,7 +27,7 @@ header
       // outline: 1px solid red
       font-size: 50px
       color: $color-logo
-      +Rashford
+      +Rashford        
   &__link
     margin: 0 auto
     display: flex
@@ -39,15 +40,17 @@ header
       font-size: 2rem
       height: 60px      
       +bold
-      padding: 6px 10px 0
-      color: black     
+      padding: 0 10px
+      color: black    
+      border-left: 1px solid $colot-light   
+      border-right: 1px solid $colot-light   
       // outline: 1px solid red
       &::before, &::after
         content: ''     
         position: absolute
         width: 1px
         height: 100%
-        background-color: black
+        background-color: $colot-light
         transition: .3s
       &::before
         top: 0
@@ -56,7 +59,7 @@ header
         top: 0
         right: 0
       &:hover
-        background-color: lighten($bg-menu,3%);   
+        background-color: lighten($bg-menu,1) 
       &:hover::before
         left: -10px       
         transform: scale(0.5)        
@@ -81,8 +84,10 @@ header
     flex-direction: column
     background-color: $bg-menu
     a
-      border-top: 1px solid black
+      // border-top: 1px solid black
+      // border-color-right: transparentize()
       // border-right: 1px solid black      
+      // border-left: 1px solid black      
   .wrapper__burger
     display: block
     width: 50px

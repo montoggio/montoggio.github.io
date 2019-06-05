@@ -5,6 +5,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Chica</title>
+   
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/fontello.css">
+   <link rel="stylesheet" href="css/fontello-embedded.css">
    <link rel="stylesheet" href="css/style.css">
  </head>
  <body>
@@ -16,12 +21,12 @@
       <div class="nav__wrapper">
 
         <div class="nav__wrapper__logo">
-          <a href="#navbar_pointor" class="nav__wrapper__logo__text">Chico</a>
+          <a href="/" class="nav__wrapper__logo__text">Chico</a>
         </div>
         <!-- logo -->
 
         <div class="nav__wrapper__link">
-          <a href="#">Сумки и<br>портмоне</a>
+          <a href="#klatch">Сумки и<br>портмоне</a>
           <a href="#">Украшения<br>для волос</a>
           <a href="#">Украшения<br>для одежды</a>
           <a href="#">Серьги,<br>цепочки, кулоны</a>            
@@ -50,8 +55,135 @@
     <!-- /.container -->
     
   </header>
+  <!-- header end -->
+  <main>
 
-  <div class="section__color" style="width: 100%; height: 1000px; background: red;"></div>
+    <section >
+      <!-- <div class="container"> -->
+        <div class="slider__wrapper">
+
+        <div class="slider__slick">
+
+          <div class="wraper__slick__item">
+            <img src="img/slider1/slaid-1.jpg" alt="slider1">
+          </div>
+          
+          <div class="wraper__slick__item">
+              <img src="img/slider1/slaid-2.jpg" alt="slider2">
+              
+            </div>
+            
+            <div class="wraper__slick__item">
+                <img src="img/slider1/slaid-3.jpg" alt="slider3">
+
+          </div>
+
+        </div>
+        <!-- slider__slick -->
+        <!-- <div class="slider__wrapper__arows"> -->
+          <i class="icon-left-open-big prevArrow arows"></i>
+          <i class="icon-right-open-big nextArrow arows"></i>
+        <!-- </div> -->
+        <!-- /.slider__wrapper__arows -->
+        </div>
+
+      <!-- </div> -->
+    </section>
+    <!-- section__slick -->
+
+    <section class="product">
+      <div class="container">
+        <h2 class="heading__text" id="klatch"> sumki </h2>
+        
+        
+        <div class="wrapper__produckt">
+
+          
+          <div class="first__product produkt__item">
+            <a href="#exampleModalCenteredScrollable" data-toggle='modal' data-work='work-1'>
+            <span>
+            <img src="img/slider1/slaid-1.jpg" alt="s1">
+            </span>              
+              </a>
+          </div>
+       
+
+          <div class="secotd__produkt produkt__item">
+            <span>
+            <img src="img/slider1/slaid-2.jpg" alt="s2">
+           </span>
+          </div>
+
+          <div class="trith__product produkt__item">
+            <span>
+            <img src="img/slider1/slaid-3.jpg" alt="s3">
+            </span>
+          </div>
+
+        </div>
+        <!-- wrapper__produckt end -->
+
+      </div>
+    </section>
+  
+
+  </main>
+
+ 
+
+<footer>
+
+ <div class="section">
+
+   <div class="container">
+
+      <div class="footer__menu">
+
+        <a href="#klatch">Сумки и<br>портмоне</a>
+        <a href="#">Украшения<br>для волос</a>
+        <a href="#">Украшения<br>для одежды</a>
+        <a href="#">Серьги,<br>цепочки, кулоны</a>
+        
+      </div>
+
+   </div>
+
+ </div>
+
+</footer>
+
+<!-- modal window -->
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div id="exampleModalCenteredScrollable" class="modal fade" tabindex="-1" role="dialog"
+  aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title logo__modal" id="exampleModalCenteredScrollableTitle">          
+            C h i c o          
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal window -->
 
 
 
@@ -61,11 +193,29 @@
 
 
 <!-- jquery -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 
+<!-- bootstram.min.js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- slick js -->
+<script src="js/slick.js"></script>
+<!-- magnific popap -->
+<script src="js/jquery.magnific-popup.js"></script>
 <!-- my_script -->
 <script src="js/my_script.js"></script>
+
+<!-- slick script init -->
+
+
+<script>
+
+
+
+</script>
+
+
 
  </body>
  </html>
