@@ -1,0 +1,28 @@
+/*media qury*/
+
+@media (max-width: 992px)
+  .wrapperItems
+    grid-template-columns: repeat(4,1fr)
+    .colomsAll
+      grid-column: 1/5
+
+@media (max-width: 768px)
+  .wrapperItems
+    grid-template-columns: repeat(3,1fr)
+    .colomsAll
+      grid-column: 1/4
+@media (max-width: 576px)
+  nav
+    width: 95vw
+    ul
+      li
+        font-size: 1.4rem
+  .wrapperItems
+    grid-template-columns: repeat(2,1fr)
+    .colomsAll
+      grid-column: 1/2
+@media (max-width: 480px)
+  .wrapperItems
+    grid-template-columns: 1fr
+    .colomsAll
+      grid-column: 1
