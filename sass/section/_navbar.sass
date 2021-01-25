@@ -1,0 +1,138 @@
+
+/*section/navbar.sass*/
+nav
+  background-color: $lightBlack7
+  position: fixed
+  top: 0
+  right: 0
+  min-width: 50vw
+  height: 100%
+  transition: 0.5s ease-in-out
+  transform: translateX(100%)
+  // border: 1px solid black
+  border-radius: 50%
+  display: flex
+  flex-direction: column
+  padding-top: 40px
+  z-index: 10
+  overflow-y: scroll
+  &::-webkit-scrollbar
+    width: 0
+nav.open_menu
+  transform: translateX(0)
+  border-radius: 5px 0 0 5px
+  box-shadow: -3px 3px 3px $lightBlack6
+  ul
+    li
+      span
+        a
+          opacity: 1
+          transition: 1s ease-in-out
+          transform: translateY(0)
+ul
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  .menu_name
+    width: 100%
+    display: flex
+    justify-content: center
+    text-shadow: 1px 1px 1px $lightBlack6
+    margin-bottom: 10px
+    margin-top: 20px
+    position: relative
+    font-weight: 700
+
+  li
+    font-size: 1.8rem
+    padding: 0 10px 0 10px
+    transition: 0.5s ease-in-out
+    // transform: translateX(100%)
+    width: 100%
+    margin: 10px 0 10px 0
+    transition: 0.5s ease-in-out
+    text-shadow: 1px 1px 1px rgba(0,0 ,0 ,0  )
+    position: relative
+    width: 100%
+    text-align: center
+    span
+      a
+        position: relative
+        transition: 0.5s ease-in-out
+        display: inline-block
+        transform: translateY(30%)
+        opacity: 0
+        &::before
+          position: absolute
+          content: ""
+          width: calc( 100% - 30px )
+          height: 1px
+          background-color: $lightBlack6
+          bottom: 10px
+          left: 50%
+          transform: translateX(-50%)
+          opacity: 0
+          transition: 0.5s ease-in-out
+
+        &:hover
+          text-shadow: 2px 2px 2px $lightBlack9
+          cursor: pointer
+          transition: 0.5s ease-in-out
+          letter-spacing: 1px
+          color: white
+
+          &::before
+            opacity: 1
+            bottom: 0
+
+.burger
+  width: 40px
+  height: 40px
+  position: fixed
+  z-index: 1000
+  top: 20px
+  right: 20px
+  transition: 0.5s ease-in-out
+  span
+    opacity: 1
+    position: absolute
+    content: ""
+    width: 30px
+    height: 1px
+    background-color: $colorBlack
+    left: 5px
+    transition: 0.5s ease-in-out
+    box-shadow: 2px 2px 3px $lightBlack6
+    &:nth-child(1)
+      top: 9px
+    &:nth-child(2)
+      top: 18px
+    &:nth-child(3)
+      top: 18px
+    &:nth-child(4)
+      top: 28px
+.burger.burger_activ
+  top: 5px
+  right: 5px
+  span
+    &:nth-child(1)
+      transform: translateY(10px)
+      opacity: 0
+    &:nth-child(4)
+      transform: translateY(-10px)
+      opacity: 0
+    &:nth-child(2)
+      transform: rotate(45deg)
+    &:nth-child(3)
+      transform: rotate(-45deg)
+
+.checkout, .clearOrder
+  color: red
+  padding: 20px
+  display: block
+  width: 50%
+  margin: 0 auto
+.clearOrder
+  margin-top: auto
+  margin-bottom: 20px
